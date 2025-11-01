@@ -1,0 +1,186 @@
+/* a classe que é apenas um asterisco, significa que os comandos valerão pra todos os elementos da página*/
+
+
+/*Hard Reset correto! :P manual:*/
+* {
+    /*tamanho do "quadrado" proporcional a 100 pixels, propriedade border-box, explicação no notion*/
+    box-sizing: border-box;
+    /*tira a margem de todos os elementos*/
+    margin: 0;
+    /*borda de dentro da borda*/
+    padding: 0;
+}
+
+
+/*dá pra acessar mais vezes no código*/
+:root {
+    --primary-color: var(#EF61D5);
+    --secondary-color: var(#727067);
+    --font-color: var(#000);
+    --background-color: #FEF0F7;
+}
+
+.emphasis {
+    color: #EF61D5;
+    font-weight: bold;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+.quadradinho {
+    background-color: #ffd6ec;
+    padding: 4px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+
+
+
+body {
+    background-image: url("images/bg.jpg");
+    /*font-family: "Fonte", substituição em caso de excessão*/
+    font-family: "Poppins", sanns serif;
+    /*tamanho da fonte, usar padrão REM*/
+    font-size: 18px;
+    /*força da fonte, exemplo bold*/
+    font-weight: 200;
+
+
+
+    header {
+        box-sizing: border-box;
+        display: flex;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: #FEF0F7;
+
+        .logo {
+            box-sizing: border-box;
+            font-family: Silkscreen, sans-serif;
+            color: #727067;
+        }
+
+        nav {
+            box-sizing: border-box;
+            flex: 1;
+            list-style: none;
+
+
+            ul {
+                display: flex;
+                gap: 2.000rem;
+                justify-content: center;
+                list-style: none;
+                cursor: pointer;
+
+
+                li {
+                    font-family: "Poppins", sans-serif;
+                    box-sizing: border-box;
+                    font-size: 28px;
+                    color: #727067;
+                    font-weight: 200;
+
+                    &:hover {
+                        color: #EF61D5;
+                    }
+                }
+            }
+        }
+
+        img {
+            height: 40px;
+            width: auto;
+        }
+    }
+
+
+
+    main {
+        #hero {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: flex-start;
+            justify-items: flex-end;
+            padding: 5%;
+            margin: auto;
+
+            article {
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                justify-content:baseline;
+                gap: 1rem;
+
+                p {
+                    font-family: "B612 Mono", sans-serif;
+                    font-size: 18px;
+                    line-height: 1.5;
+                    font-weight: lighter;
+                    color: #1d1d1d;
+                }
+
+                .title {
+                    color: #727067;
+                    font-size: 5.5rem;
+                    font-weight:inherit;
+                    line-height: 0.75;
+                }
+
+
+                button {
+                    border: 1px solid transparent;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 24px;
+                    font-weight: 500;
+                    padding: 0.75rem;
+                    transition: background-color 0.3s ease;
+
+
+                    &.primary {
+                        background-color: #EF61D5;
+                        color: #ffffff;
+                        border: 1px solid #727067;
+
+                    }
+
+                    &.outline {
+                        background-color: transparent;
+                        color: #EF61D5;
+                        border: 1px solid #727067;
+
+                    }
+
+                    &:hover {
+                        background-color: (darkent#000, 60%);
+                        border-color: #1d1d1d;
+                    }
+
+                }
+
+
+
+
+            }
+
+            .frame {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                width: 400px;
+                height: 400px;
+
+
+                img {
+                    width: 550px;
+                    aspect-ratio: 1/1;
+                    object-fit: contain;
+                }
+            }
+
+        }
+    }
+}
