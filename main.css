@@ -31,9 +31,9 @@
 
 .quadradinho {
     background-color: #FEF0F7;
-    padding: 4px;
+    padding: 0.25rem;
     border: 1px solid #000;
-    border-radius: 5px;
+    border-radius: 0.313rem;
 }
 
 
@@ -44,7 +44,7 @@ body {
     /*font-family: "Fonte", substituição em caso de excessão*/
     font-family: "Poppins", sanns serif;
     /*tamanho da fonte, usar padrão REM*/
-    font-size: 18px;
+    font-size: 1.125rem;
     /*força da fonte, exemplo bold*/
     font-weight: 200;
 
@@ -79,7 +79,7 @@ body {
                 li {
                     font-family: "Poppins", sans-serif;
                     box-sizing: border-box;
-                    font-size: 28px;
+                    font-size: 1.75rem;
                     color: #727067;
                     font-weight: 200;
 
@@ -91,7 +91,7 @@ body {
         }
 
         img {
-            height: 40px;
+            height: 2.5rem;
             width: auto;
         }
     }
@@ -116,7 +116,7 @@ body {
 
                 p {
                     font-family: "B612 Mono", sans-serif;
-                    font-size: 18px;
+                    font-size: 1.125rem;
                     line-height: 1.5;
                     font-weight: lighter;
                     color: #1d1d1d;
@@ -133,13 +133,13 @@ body {
                 button {
                     box-sizing: border-box;
                     border: 1px solid transparent;
-                    border-radius: 5px;
+                    border-radius: 0.313rem;
                     cursor: pointer;
                     font-family: "Poppins", sans-serif;
-                    font-size: 24px;
+                    font-size: 1.5rem;
                     font-weight: 350;
-                    padding: 20px;
-                    width: 250px;
+                    padding: 1.25rem;
+                    width: 15.625rem;
                     transition: background-color 0.3s ease;
 
 
@@ -173,12 +173,12 @@ body {
                 align-items: center;
                 display: flex;
                 justify-content: center;
-                width: 500px;
-                height: 500px;
+                width: 31.25rem;
+                height: 31.25rem;
 
 
                 img {
-                    width: 550px;
+                    width: 34.375rem;
                     aspect-ratio: 1/1;
                     object-fit: contain;
                 }
