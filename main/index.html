@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--padrão da linguagem, idioma, semântica-->
+<html lang="pt_br">
+
+<!--metatags. informações pro navegador-->
+
+<head>
+    <!--padrão de linguagem, aceitar carácteres especiais-->
+    <meta charset="UTF-8">
+
+    <!--adaptação ao tamanho da tela-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--conexão ao css-->
+    <link rel="stylesheet" href="main.css">
+
+    <!--fontes-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <!--titulozinho da aba-->
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <!--fiz uma divisão pra esse elemento, um espaço-->
+            <div class="logo">Lívia<br>Helena</div>
+            <!--informa que existe uma navegação nesse setor-->
+            <nav>
+                <!--cria uma "lista não ordenada" de elementos-->
+                <ul>
+                    <!--elementos que estarão dentro desta lista-->
+                    <a href="main/index.html" target="_blank"></a><li>Home</li>
+                    <a href="service/sobreMim.html" target="_blank"><li>Sobre Mim</li></a>
+                    <a href="service/projetos.html" target="_blank"><li>Projetos</li></a>
+                </ul>
+            </nav>
+
+            <div>
+                <a href="https://www.linkedin.com/in/livia-helena/" target="_blank"><img src=" images/linkedin.png"
+                    alt="Ícone para contato"></a>
+                <div>
+
+        </header>
+
+
+        <!-- criar a seção, com artigos dentro, espaços-->
+        <section id="hero">
+            <article>
+                <p>Olá! Sou a <span class="quadradinho">Lívia!</span></p>
+                <h1 class="title">Front End<br><span class="emphasis">UX & Design</span></h1>
+                <p>  Estudante de Desenvolvimento para a Web;</p>
+                <p> Venha comigo encontrar <span class="solucoes">Soluções Criativas!</span></p>
+                <div class="botoes" flex; gap: 8.625rem;">
+                    <a href="https://www.linkedin.com/in/livia-helena/" target="_blank"><button class="primary">Contato</button> </a>
+                    <a href="service/projetos.html" target="_blank"><button class="outline">Projetos</button></a>
+                </div>
+            </article>
+
+
+            <div class="frame">
+                <img src="images/euzinha.png" alt="Avatar">
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

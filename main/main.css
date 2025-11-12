@@ -1,0 +1,207 @@
+/* a classe que é apenas um asterisco, significa que os comandos valerão pra todos os elementos da página*/
+
+
+/*Hard Reset correto! :P manual:*/
+* {
+    /*tamanho do "quadrado" proporcional a 100 pixels, propriedade border-box, explicação no notion*/
+    box-sizing: border-box;
+    /*tira a margem de todos os elementos*/
+    margin: 0;
+    /*borda de dentro da borda*/
+    padding: 0;
+}
+
+
+/*dá pra acessar mais vezes no código*/
+:root {
+    --primary-color: var(#d396db);
+    --secondary-color: var(#727067);
+    --font-color: var(#000);
+    --background-color: #ffd6ec;
+}
+
+.emphasis {
+    color: #d396db;
+    font-weight: bold;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+:a {}
+
+.quadradinho {
+    background-color: #FEF0F7;
+    padding: 0.25rem;
+    border: 1px solid #000;
+}
+
+
+
+
+body {
+    background: #faf2fa;
+    background: linear-gradient(173deg, rgba(250, 242, 250, 1) 75%, rgba(226, 197, 230, 1) 100%);
+
+    /*font-family: "Fonte", substituição em caso de excessão*/
+    font-family: "Poppins", sanns serif;
+    /*tamanho da fonte, usar padrão REM*/
+    font-size: 16px;
+    /*força da fonte, exemplo bold*/
+    font-weight: 200;
+
+
+
+    header {
+        box-sizing: border-box;
+        display: flex;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: #d396db;
+
+        .logo {
+            box-sizing: border-box;
+            font-family: Silkscreen, sans-serif;
+            color: #ffffff;
+        }
+
+        nav {
+            box-sizing: border-box;
+            flex: 1;
+            list-style: none;
+
+
+            ul {
+                display: flex;
+                gap: 2.000rem;
+                justify-content: center;
+                list-style: none;
+                cursor: pointer;
+
+                a {
+                    text-decoration: none;
+                }
+
+
+                li {
+                    font-family: "Poppins", sans-serif;
+                    box-sizing: border-box;
+                    font-size: 24px;
+                    color: #ffffff;
+                    font-weight: 200;
+
+                    &:hover {
+                        color: #5b0566;
+                    }
+                }
+            }
+        }
+
+
+        img {
+            height: 2.0rem;
+            width: auto;
+        }
+    }
+
+
+
+    main {
+        #hero {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            justify-items: center;
+            padding: 40px;
+            margin: 0 auto;
+
+
+            article {
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                justify-content: baseline;
+                gap: 1.25rem;
+
+                p {
+                    font-family: "B612 Mono", sans-serif;
+                    font-size: 16px;
+                    line-height: 1.0;
+                    font-weight: lighter;
+                    color: #1d1d1d;
+                }
+
+                .solucoes {
+                    font-weight: bold;
+                    font-style: italic;
+                }
+
+                .title {
+                    color: #727067;
+                    font-size: 5.5rem;
+                    font-weight: inherit;
+                    line-height: 75px;
+                }
+
+
+                button {
+                    box-sizing: border-box;
+                    align-items: center;
+                    border: 1px solid transparent;
+                    cursor: pointer;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 24px;
+                    font-weight: 350;
+                    padding: 1.25rem;
+                    width: 240px;
+                    transition: background-color 0.3s ease;
+
+
+                    &.primary {
+                        background-color: #d396db;
+                        color: #FEF0F7;
+                        border: 1px solid #727067;
+
+                    }
+
+                    &.outline {
+                        background-color: transparent;
+                        color: #d396db;
+                        border: 1px solid #727067;
+
+                    }
+
+                    &:hover {
+                        background-color: (darkent#000, 60%);
+                        border-color: #1d1d1d;
+                    }
+
+                }
+
+
+
+
+            }
+
+            .frame {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                width: 500px;
+                height: 500px;
+
+
+                img {
+                    width: 500px;
+                    aspect-ratio: 1/1;
+                    object-fit: contain;
+                }
+
+                img:hover {
+                    transform: rotate(10deg);
+                }
+            }
+
+        }
+    }
+}
