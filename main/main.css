@@ -21,7 +21,7 @@
 }
 
 .emphasis {
-    color: #d396db;
+    color: #A63251;
     font-weight: bold;
 }
 
@@ -34,15 +34,14 @@
 .quadradinho {
     background-color: #FEF0F7;
     padding: 0.25rem;
-    border: 1px solid #000;
+    border: 0.75px solid #59554C;
 }
 
 
 
 
 body {
-    background: #faf2fa;
-    background: linear-gradient(173deg, rgba(250, 242, 250, 1) 75%, rgba(226, 197, 230, 1) 100%);
+    background: linear-gradient(166deg, rgba(255, 255, 255, 1) 0%, rgba(255, 214, 225, 1) 100%, rgba(252, 225, 225, 1) 61%);
 
     /*font-family: "Fonte", substituição em caso de excessão*/
     font-family: "Poppins", sanns serif;
@@ -57,7 +56,7 @@ body {
         box-sizing: border-box;
         display: flex;
         border: 1px solid rgb(0, 0, 0);
-        background-color: #d396db;
+        background-color: #D982A2;
 
         .logo {
             box-sizing: border-box;
@@ -91,7 +90,7 @@ body {
                     font-weight: 200;
 
                     &:hover {
-                        color: #5b0566;
+                        color: #A63251;
                     }
                 }
             }
@@ -120,13 +119,14 @@ body {
                 display: flex;
                 flex: 1;
                 flex-direction: column;
-                justify-content: baseline;
+                justify-content: center;
                 gap: 1.25rem;
 
                 p {
                     font-family: "B612 Mono", sans-serif;
                     font-size: 16px;
                     line-height: 1.0;
+                    gap: 1rem;
                     font-weight: lighter;
                     color: #1d1d1d;
                 }
@@ -137,7 +137,7 @@ body {
                 }
 
                 .title {
-                    color: #727067;
+                    color: #59554C;
                     font-size: 5.5rem;
                     font-weight: inherit;
                     line-height: 75px;
@@ -153,27 +153,27 @@ body {
                     font-size: 24px;
                     font-weight: 350;
                     padding: 1.25rem;
-                    width: 240px;
+                    width: 290px;
                     transition: background-color 0.3s ease;
 
 
                     &.primary {
-                        background-color: #d396db;
+                        background-color: #D982A2;
                         color: #FEF0F7;
-                        border: 1px solid #727067;
+                        border: 0.75px solid #59554C;
 
                     }
 
                     &.outline {
                         background-color: transparent;
-                        color: #d396db;
-                        border: 1px solid #727067;
+                        color: #D982A2;
+                        border: 0.75px solid #59554C;
 
                     }
 
                     &:hover {
                         background-color: (darkent#000, 60%);
-                        border-color: #1d1d1d;
+                        border-color: #59554C;
                     }
 
                 }
@@ -186,13 +186,15 @@ body {
             .frame {
                 align-items: center;
                 display: flex;
-                justify-content: center;
+                justify-items: center;
                 width: 500px;
                 height: 500px;
 
 
                 img {
+                    
                     width: 500px;
+                    height: auto;
                     aspect-ratio: 1/1;
                     object-fit: contain;
                 }
