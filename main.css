@@ -23,6 +23,7 @@
 .emphasis {
     color: #A63251;
     font-weight: bold;
+    font-style:normal;
 }
 
 .negrito {
@@ -133,12 +134,12 @@ body {
 
                 .solucoes {
                     font-weight: bold;
-                    font-style: italic;
                 }
 
                 .title {
                     color: #59554C;
                     font-size: 5.5rem;
+                    font-style: italic;
                     font-weight: inherit;
                     line-height: 75px;
                 }
